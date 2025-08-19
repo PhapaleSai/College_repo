@@ -38,5 +38,29 @@
  git push origin main
 ```
 
+Practical  2
+Commands
+  git clone https://github.com/PhapaleSai/College_repo.git
+    ls
+   cd College_repo/
+     ls
+     vim sai.txt
+     git status
+     git commit -m "Added some content to sai.txt"
+     git branch feature
+     git checkout feature
+     git remote add origin  https://github.com/PhapaleSai/College_repo.git
+     git remote -v
+     git push origin feature
+     ls
+     git add sai.txt
+     git commit -m "sai.txt"
+     git push origin feature
+     git checkout main
+     ls
+     git pull origin main
+
+
+
 
 
