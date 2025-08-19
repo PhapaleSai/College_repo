@@ -1,7 +1,3 @@
-Absolutely! Here's a **well-formatted README file** for your **Practical 1**, written in a simple, step-by-step, "explain like I'm 5" style — just like you asked earlier. This will help you remember **exactly what you did**, and **why** each step is important.
-
----
-
 # 🧑‍💻 Practical 1: Creating a Git Repository and Pushing to GitHub
 
 ## 🧠 What I Learned
