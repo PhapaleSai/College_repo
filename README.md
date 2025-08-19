@@ -207,6 +207,9 @@ vim sai.txt
 * Type `:wq`
 * Press `Enter` to **save and quit**
 
+* or use
+* echo "hello i am sai " > your.txt file
+
 ---
 
 ### ✅ 4. Checked Git Status
