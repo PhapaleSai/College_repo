@@ -252,8 +252,6 @@ git pull origin main
 
 ---
 
-Let me know if you'd like this in a downloadable format like `.md` or PDF!
-
 
 
 
