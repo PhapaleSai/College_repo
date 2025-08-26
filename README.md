@@ -533,6 +533,147 @@ git push origin feature
 git checkout main
 git pull origin main
 ```
+Got it 👍 you want a **click-by-click guide** for the Bitbucket website part, like instructions for a kid: “go here → click this → do that.”
+
+I’ll add those **extra details** to your Practical 4.
+
+---
+
+# 🧑‍💻 Practical 4: Working with Branches and Pull Requests in Bitbucket
+
+---
+
+## 🧠 What I Learned
+
+Today, I learned how to:
+
+* **Clone** a repository from Bitbucket (copy it from the cloud to my computer).
+* **Add a file**, save changes, and commit it.
+* **Create a new branch** and switch between branches.
+* **Push a branch** to Bitbucket.
+* **Create a Pull Request (PR)** in Bitbucket by clicking on the website.
+* **Merge my feature branch into the main branch**.
+* **Pull the latest changes** from Bitbucket.
+
+---
+
+## ✅ Steps I Followed
+
+### 🚀 1. Clone a Repository from Bitbucket
+
+```bash
+git clone https://college_demo-admin@bitbucket.org/college_demo/college_pratice.git
+```
+
+📁 This tells Git:
+“Please make a copy of this repo on my computer.”
+
+---
+
+### 📂 2. Go Inside the Repo Folder
+
+```bash
+cd college_pratice/
+ls
+```
+
+---
+
+### 📄 3. Add a New File and Stage It
+
+```bash
+git add test.txt
+```
+
+---
+
+### 💾 4. Commit the File
+
+```bash
+git commit -m "Added New file"
+```
+
+---
+
+### 🌱 5. Create and Switch to a New Branch
+
+```bash
+git branch feature
+git checkout feature
+```
+
+---
+
+### 🌍 6. Push the Branch to Bitbucket
+
+```bash
+git push origin feature
+```
+
+---
+
+### 🖱️ 7. Create a Pull Request on Bitbucket Website
+
+1. **Open browser → go to** [bitbucket.org](https://bitbucket.org).
+2. **Login** with your account.
+3. Go to your repository → `college_pratice`.
+4. On the left-hand side menu, **click on "Pull requests"**.
+5. On the top-right, **click "Create pull request"**.
+6. Select:
+
+   * **Source branch** → `feature` (where your new file is).
+   * **Destination branch** → `main`.
+7. Type a **title** → `"Added new test.txt file"`.
+8. (Optional) Add a description.
+9. **Click the green "Create pull request" button**.
+
+---
+
+### 👀 8. Review and Merge in Bitbucket
+
+1. You will now see the Pull Request screen.
+2. Scroll down to check the changes.
+3. On the top-right, click **Merge**.
+4. If successful → Bitbucket joins `feature` into `main`. 🎉
+
+---
+
+### 🔙 9. Update Your Local Main Branch
+
+```bash
+git checkout main
+git pull origin main
+```
+
+---
+
+## 🧾 Summary of Commands Used
+
+```
+git clone <repo-url>
+cd college_pratice/
+git add test.txt
+git commit -m "Added New file"
+git branch feature
+git checkout feature
+git push origin feature
+git checkout main
+git pull origin main
+```
+
+---
+
+## 💡 Tips for Future Me
+
+* Always push your branch before making a PR.
+* On Bitbucket: **Pull requests → Create pull request → Select feature → main → Merge**.
+* Write clear commit + PR messages.
+* Always pull (`git pull origin main`) after merging so your local copy is updated.
+
+---
+
+Local → Push → Bitbucket → Pull Request → Merge → Pull back 
+
 
 ---
 
