@@ -360,6 +360,180 @@ git pull origin main
 * Don’t forget to **add** files before committing!
 * Use **Pull Requests** to share and merge changes on GitHub.
 
+Sure! Here's your **Practical 3: Using GitLab** explained in the format you requested, step by step, just like you did for GitHub. This is for working with GitLab, where you cloned, edited, and pushed files, then created a new branch and pushed it to GitLab.
+
+---
+
+### 🧑‍💻 Practical 3: Cloning, Branching, Pushing, and Pull Requests on GitLab
+
+### 🧠 **What I Learned**
+
+Today, I learned how to:
+
+* Clone a GitLab repository to my computer.
+* Make changes to files.
+* Create a new branch to work separately.
+* Push changes to GitLab from a new branch.
+* Collaborate using Merge Requests on GitLab.
+* Sync changes from GitLab to my computer.
+* Correct old login information in Git's credential manager.
+
+### 🔧 **Steps I Did in Order**
+
+#### ✅ 1. **Cloned the Repository from GitLab**
+
+This brings the GitLab project from the internet to my computer.
+
+```bash
+git clone https://gitlab.com/sai_phapale-group/Sai_Phapale-project.git
+```
+
+👉 Now a folder named `Sai_Phapale-project` is on my computer.
+
+#### ✅ 2. **Checked What's Inside**
+
+```bash
+ls
+cd Sai_Phapale-project/
+ls
+```
+
+📁 This shows me all the files inside the project.
+
+#### ✅ 3. **Created or Edited a File**
+
+I made or updated a file called `sai.txt` using the echo command.
+
+```bash
+echo "Hello World" > sai.txt
+```
+
+👉 This creates a new file with the text "Hello World" inside it.
+
+#### ✅ 4. **Checked Git Status**
+
+This shows what files I changed or added.
+
+```bash
+git status
+```
+
+#### ✅ 5. **Committed My Changes**
+
+But wait! I forgot to add the file to the staging area. 😅 So I fixed that:
+
+```bash
+git add sai.txt
+```
+
+Then I saved my work with a message:
+
+```bash
+git commit -m "Added new file sai.txt"
+```
+
+📝 This creates a snapshot of my changes.
+
+#### ✅ 6. **Created a New Branch**
+
+I wanted to work on a separate line called `feature`.
+
+```bash
+git branch feature
+git checkout feature
+```
+
+🔄 Now I’m working in the `feature` branch.
+
+#### ✅ 7. **Added Remote Link (If not already added)**
+
+Just to make sure Git knows where my GitLab repo is:
+
+```bash
+git remote add origin https://gitlab.com/sai_phapale-group/Sai_Phapale-project.git
+git remote -v
+```
+
+This shows the link to GitLab is working. 👍
+
+#### ✅ 8. **Pushed My Changes to GitLab**
+
+I sent my changes from my local `feature` branch to GitLab.
+
+```bash
+git push origin feature
+```
+
+🚀 Now my changes are on GitLab, under the `feature` branch.
+
+#### ✅ 9. **Created a Merge Request (on GitLab)**
+
+Now it’s time to ask GitLab to bring my `feature` changes into the main project.
+🖱️ Go to: [https://gitlab.com/sai\_phapale-group/Sai\_Phapale-project](https://gitlab.com/sai_phapale-group/Sai_Phapale-project)
+
+Then:
+
+1. Click the “Merge Requests” tab on the left sidebar.
+2. Click the "New Merge Request" button.
+3. Select the `feature` branch and the `main` branch (or whichever branch you want to merge into).
+4. Write a title and description (e.g., "Added new file sai.txt").
+5. Click “Submit Merge Request”.
+6. If you're ready to bring the changes into `main`, click “Merge”.
+7. Confirm by clicking “Merge” again.
+
+🎉 Done! Your changes are now part of `main`.
+
+#### ✅ 10. **Sync Changes from GitLab to My Computer**
+
+First, switch back to the `main` branch on your local machine:
+
+```bash
+git checkout main
+```
+
+Then get the latest changes from GitLab:
+
+```bash
+git pull origin main
+```
+
+🌐 This updates your local `main` branch with everything from GitLab.
+
+#### ✅ 11. **Important Note: Credential Manager**
+
+If someone else was logged in before, you might see their GitLab login.
+
+To fix this:
+
+1. Go to **Windows Search** > type **Credential Manager**.
+2. Open it.
+3. Go to **Windows Credentials**.
+4. Find anything that says `git:https://gitlab.com` and remove it.
+5. Next time you push or pull, Git will ask for your GitLab login.
+
+🔐 This keeps your GitLab account safe and correct.
+
+---
+
+### 📌 **Summary of Commands Used**
+
+```bash
+git clone <repo-url>
+ls
+cd Sai_Phapale-project/
+echo "Hello World" > sai.txt
+git status
+git add sai.txt
+git commit -m "Added new file sai.txt"
+git branch feature
+git checkout feature
+git remote add origin <repo-url>
+git remote -v
+git push origin feature
+git checkout main
+git pull origin main
+```
+
 ---
 
 
