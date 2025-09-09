@@ -539,25 +539,11 @@ I’ll add those **extra details** to your Practical 4.
 
 ---
 
-# 🧑‍💻 Practical 4: Working with Branches and Pull Requests in Bitbucket
+Sure! To ensure that the new file is created in the `feature` branch (instead of the default `main` branch), you just need to make sure you're on the `feature` branch **before** you create the file. Here's the revised workflow:
 
 ---
 
-## 🧠 What I Learned
-
-Today, I learned how to:
-
-* **Clone** a repository from Bitbucket (copy it from the cloud to my computer).
-* **Add a file**, save changes, and commit it.
-* **Create a new branch** and switch between branches.
-* **Push a branch** to Bitbucket.
-* **Create a Pull Request (PR)** in Bitbucket by clicking on the website.
-* **Merge my feature branch into the main branch**.
-* **Pull the latest changes** from Bitbucket.
-
----
-
-## ✅ Steps I Followed
+## ✅ Steps I Followed (Updated)
 
 ### 🚀 1. Clone a Repository from Bitbucket
 
@@ -579,27 +565,30 @@ ls
 
 ---
 
-### 📄 3. Add a New File and Stage It
+### 🌱 3. Create and Switch to the Feature Branch
 
 ```bash
+git branch feature
+git checkout feature
+```
+
+📝 **Important**: You’re now on the `feature` branch. Any new files you create will be added here.
+
+---
+
+### 📄 4. Add a New File and Stage It
+
+```bash
+echo "This is a test file" > test.txt
 git add test.txt
 ```
 
 ---
 
-### 💾 4. Commit the File
+### 💾 5. Commit the File
 
 ```bash
-git commit -m "Added New file"
-```
-
----
-
-### 🌱 5. Create and Switch to a New Branch
-
-```bash
-git branch feature
-git checkout feature
+git commit -m "Added new test.txt file to feature branch"
 ```
 
 ---
@@ -647,15 +636,16 @@ git pull origin main
 
 ---
 
-## 🧾 Summary of Commands Used
+## 🧾 Summary of Commands Used (Updated)
 
 ```
 git clone <repo-url>
 cd college_pratice/
-git add test.txt
-git commit -m "Added New file"
 git branch feature
 git checkout feature
+echo "This is a test file" > test.txt
+git add test.txt
+git commit -m "Added new test.txt file to feature branch"
 git push origin feature
 git checkout main
 git pull origin main
@@ -663,19 +653,17 @@ git pull origin main
 
 ---
 
-## 💡 Tips for Future Me
+### 💡 Tips for Future Me (Updated)
 
-* Always push your branch before making a PR.
+* **Create the file after switching to the feature branch**.
+* **Push your branch before making a PR**.
 * On Bitbucket: **Pull requests → Create pull request → Select feature → main → Merge**.
-* Write clear commit + PR messages.
-* Always pull (`git pull origin main`) after merging so your local copy is updated.
+* **Write clear commit + PR messages**.
+* **Always pull (`git pull origin main`) after merging** so your local copy is updated.
 
 ---
 
-Local → Push → Bitbucket → Pull Request → Merge → Pull back 
-
-
----
+This way, the new file will always be part of the `feature` branch, and your `main` branch will stay clean until you merge the feature branch.
 
 
 
