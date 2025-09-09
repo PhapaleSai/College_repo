@@ -533,23 +533,32 @@ git push origin feature
 git checkout main
 git pull origin main
 ```
-Got it 👍 you want a **click-by-click guide** for the Bitbucket website part, like instructions for a kid: “go here → click this → do that.”
-
-I’ll add those **extra details** to your Practical 4.
-
 ---
 
-Sure! To ensure that the new file is created in the `feature` branch (instead of the default `main` branch), you just need to make sure you're on the `feature` branch **before** you create the file. Here's the revised workflow:
-
----
 # 🧑‍💻 Practical 4: Cloning, Branching, Pushing, and Pull Requests on Bitbucket
 
-## ✅ Steps I Followed (Updated)
+---
+
+## 🧠 What I Learned
+
+Today, I learned how to:
+
+* **Clone** a repository from Bitbucket.
+* **Create a new file**, stage it, and commit it.
+* **Create and switch to a feature branch**.
+* **Push my branch** to Bitbucket.
+* **Make a Pull Request (PR)** on the Bitbucket website.
+* **Merge my feature branch into the main branch**.
+* **Update my local main branch** after merging.
+
+---
+
+## ✅ Steps I Followed
 
 ### 🚀 1. Clone a Repository from Bitbucket
 
 ```bash
-git clone https://college_demo-admin@bitbucket.org/college_demo/college_pratice.git
+git clone https://college_demo-admin@bitbucket.org/college_demo/practice_check.git
 ```
 
 📁 This tells Git:
@@ -560,71 +569,76 @@ git clone https://college_demo-admin@bitbucket.org/college_demo/college_pratice.
 ### 📂 2. Go Inside the Repo Folder
 
 ```bash
-cd college_pratice/
+cd practice_check/
 ls
 ```
 
 ---
 
-### 🌱 3. Create and Switch to the Feature Branch
+### 📄 3. Create a New File
 
 ```bash
-git branch feature
-git checkout feature
+echo "i am sai" > sai.txt
+ls
 ```
 
-📝 **Important**: You’re now on the `feature` branch. Any new files you create will be added here.
+This makes a new file named **sai.txt** with the text *i am sai*.
 
 ---
 
-### 📄 4. Add a New File and Stage It
+### 💾 4. Add and Commit the File
 
 ```bash
-echo "This is a test file" > test.txt
-git add test.txt
+git add sai.txt
+git commit -m "the file is added"
 ```
+
+This saves my file into Git’s history.
 
 ---
 
-### 💾 5. Commit the File
+### 🌱 5. Create and Switch to a Feature Branch
 
 ```bash
-git commit -m "Added new test.txt file to feature branch"
+git checkout -b feature
 ```
+
+💡 This makes a new branch called **feature** and moves me into it.
 
 ---
 
-### 🌍 6. Push the Branch to Bitbucket
+### 🌍 6. Push the Feature Branch to Bitbucket
 
 ```bash
 git push origin feature
 ```
 
+This uploads the **feature** branch (with sai.txt) to Bitbucket.
+
 ---
 
 ### 🖱️ 7. Create a Pull Request on Bitbucket Website
 
-1. **Open browser → go to** [bitbucket.org](https://bitbucket.org).
-2. **Login** with your account.
-3. Go to your repository → `college_pratice`.
-4. On the left-hand side menu, **click on "Pull requests"**.
-5. On the top-right, **click "Create pull request"**.
+1. Open [bitbucket.org](https://bitbucket.org).
+2. Log in to your account.
+3. Go to your repository → **practice\_check**.
+4. On the left menu, click **Pull requests**.
+5. Click the blue **Create pull request** button (top-right).
 6. Select:
 
-   * **Source branch** → `feature` (where your new file is).
+   * **Source branch** → `feature`.
    * **Destination branch** → `main`.
-7. Type a **title** → `"Added new test.txt file"`.
+7. Add a title → `"Added sai.txt file"`.
 8. (Optional) Add a description.
-9. **Click the green "Create pull request" button**.
+9. Click the green **Create pull request** button.
 
 ---
 
 ### 👀 8. Review and Merge in Bitbucket
 
-1. You will now see the Pull Request screen.
-2. Scroll down to check the changes.
-3. On the top-right, click **Merge**.
-4. If successful → Bitbucket joins `feature` into `main`. 🎉
+1. On the Pull Request screen, check the changes.
+2. If all looks good, click **Merge** (top-right).
+3. Now Bitbucket combines your `feature` branch into `main`. 🎉
 
 ---
 
@@ -633,20 +647,22 @@ git push origin feature
 ```bash
 git checkout main
 git pull origin main
+ls
 ```
+
+Now my **main** branch also has **sai.txt**.
 
 ---
 
-## 🧾 Summary of Commands Used (Updated)
+## 🧾 Summary of Commands Used
 
 ```
 git clone <repo-url>
-cd college_pratice/
-git branch feature
-git checkout feature
-echo "This is a test file" > test.txt
-git add test.txt
-git commit -m "Added new test.txt file to feature branch"
+cd practice_check/
+echo "i am sai" > sai.txt
+git add sai.txt
+git commit -m "the file is added"
+git checkout -b feature
 git push origin feature
 git checkout main
 git pull origin main
@@ -654,17 +670,15 @@ git pull origin main
 
 ---
 
-### 💡 Tips for Future Me (Updated)
+## 💡 Tips for Future Me
 
-* **Create the file after switching to the feature branch**.
-* **Push your branch before making a PR**.
-* On Bitbucket: **Pull requests → Create pull request → Select feature → main → Merge**.
-* **Write clear commit + PR messages**.
-* **Always pull (`git pull origin main`) after merging** so your local copy is updated.
+* Always create a branch before making new changes.
+* Push your branch **before** making a Pull Request.
+* On Bitbucket: **Pull requests → Create pull request → feature → main → Merge**.
+* Write short and clear commit + PR messages.
+* After merging, always run `git pull origin main` so your local copy is updated.
 
 ---
-
-This way, the new file will always be part of the `feature` branch, and your `main` branch will stay clean until you merge the feature branch.
 
 
 
