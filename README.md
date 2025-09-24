@@ -687,7 +687,8 @@ Here’s your final **README.md**:
 
 ---
 
-# 🐳 My First Docker Project (Apache Web Server on AWS EC2)
+# Assignemnt Exploring Containerization and Application Deployment with Docker 
+🐳 My First Docker Project (Apache Web Server on AWS EC2)
 
 Hi future me 👋,
 This is what I did today step by step. Read it like a story so you don’t forget 🚀
