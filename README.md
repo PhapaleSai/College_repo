@@ -1132,7 +1132,8 @@ cat > src/main/webapp/index.jsp << 'EOF'
 <html>
   <body>
     <h1 style="color:red; text-align:center;">
-      Hello Maven Web App on AWS EC2 🚀 (Port 8080)
+      Hello Maven Web App on AWS EC2 (Port 8080)
+      Its all automatic BROOOO!!!!!!!!!!!!
     </h1>
   </body>
 </html>
