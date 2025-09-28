@@ -759,8 +759,15 @@ This is what I did today step by step. Read it like a story so you don’t forge
 3. **Create a Dockerfile**
 
    ```dockerfile
+   vim Dockerfile
+   ```
+
+   ```
    FROM httpd:2.4
    COPY index.html /usr/local/apache2/htdocs/
+   ```
+   ```
+   :wq! ((save the file)
    ```
 
    👉 This means:
