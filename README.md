@@ -778,13 +778,13 @@ This is what I did today step by step. Read it like a story so you don’t forge
 4. **Build my Docker image**
 
    ```bash
-   docker build -t my-apache-server .
+   sudo docker build -t my-apache-server .
    ```
 
 5. **Run my container**
 
    ```bash
-   docker run -p 8080:80 -d my-apache-server
+   sudo docker run -p 8080:80 -d my-apache-server
    ```
 
    👉 This means:
