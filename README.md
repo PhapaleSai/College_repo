@@ -813,17 +813,17 @@ This is what I did today step by step. Read it like a story so you don’t forge
 * Stop the container:
 
   ```bash
-  docker stop <container_id>
+  sudo docker stop <container_id>
   ```
 * Remove container:
 
   ```bash
-  docker rm <container_id>
+  sudo docker rm <container_id>
   ```
 * Remove image:
 
   ```bash
-  docker rmi my-apache-server
+  sudo docker rmi my-apache-server
   ```
 
 ---
