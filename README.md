@@ -753,7 +753,7 @@ This is what I did today step by step. Read it like a story so you don’t forge
 2. **Create a simple web page**
 
    ```bash
-   echo "<h1>Hello, Docker!</h1>" > index.html
+   echo "<h1>Hello, Docker</h1>" > index.html
    ```
 
 3. **Create a Dockerfile**
