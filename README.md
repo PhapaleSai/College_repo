@@ -795,7 +795,7 @@ This is what I did today step by step. Read it like a story so you don’t forge
 6. **Check it’s running**
 
    ```bash
-   docker ps
+   sudo docker ps
    ```
 
 7. **Open in browser**
