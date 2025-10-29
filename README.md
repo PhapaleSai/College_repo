@@ -1,8 +1,5 @@
 # GPT Command which i had given 
  think like i am 5 years old like wise give me explantion like that so when come again to visit my github readme file i will know the things which i had done today
-#-----------------------------------------------------------------------------------
-Here’s your improved and properly formatted version of **Practical 1** — complete, corrected, and with your requested addition (`echo "I am Sai" >> sai.txt`) and `main` branch renaming step included 👇
-
 ---
 
 # 🧑‍💻 **Practical 1: Creating a Git Repository and Pushing to GitHub**
