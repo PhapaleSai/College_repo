@@ -214,6 +214,10 @@ git checkout -b feature
 Option A — Use `vim`:
 
 ```bash
+echo "I am Sai" >> sai.txt
+
+or
+
 vim sai.txt
 # press i to insert, type your text, Esc, :wq, Enter to save and quit
 ```
