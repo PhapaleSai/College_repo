@@ -463,16 +463,16 @@ Then:
 
 #### ✅ 10. **Sync Changes from GitLab to My Computer**
 
-First, switch back to the `main` branch on your local machine:
+First, switch back to the `main` branch on your local machine (master) branch because in GitLab we have master branch instead of main:
 
 ```bash
-git checkout main
+git checkout master
 ```
 
 Then get the latest changes from GitLab:
 
 ```bash
-git pull origin main
+git pull origin master
 ```
 
 🌐 This updates your local `main` branch with everything from GitLab.
