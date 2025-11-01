@@ -124,6 +124,20 @@ This creates a **snapshot** of your project with a message explaining what chang
 git push -u origin main
 ```
 
+### 10 If error then execute this command
+
+```bash
+git pull origin main --allow-unrelated-histories
+:q!
+```
+then execute these commands
+```bash
+git add .
+git commit -m "Merged remote and local histories"
+git push origin main
+```
+
+
 > “Send my committed changes to GitHub’s `main` branch.”
 
 💡 The `-u` flag links your local `main` branch with the remote one.
