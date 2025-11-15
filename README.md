@@ -14,7 +14,6 @@ Today, I learned how to:
 4. Understand the purpose of each Git command used in the process.
 
 ---
-
 ## ✅ **Steps I Followed**
 
 ### 🚀 **1. Initialize a New Git Repository**
