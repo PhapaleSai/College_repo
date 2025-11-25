@@ -247,7 +247,7 @@ echo "hello i am sai" > sai.txt
 git status
 ```
 
-See which files are untracked or modified on the `feature` branch.
+See which files are untracked or modified on the `feature` branch. 
 
 ---
 
