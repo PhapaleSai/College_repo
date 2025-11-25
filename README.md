@@ -127,6 +127,8 @@ git push -u origin main
 
 ```bash
 git pull origin main --allow-unrelated-histories
+```
+```
 :q!
 ```
 then execute these commands
